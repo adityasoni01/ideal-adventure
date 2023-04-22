@@ -1,5 +1,6 @@
 import Navbar from '@/components/navbar'
 import './globals.css'
+import Temp from '@/components/temp'
 
 export const metadata = {
   title: 'Create Next App',
