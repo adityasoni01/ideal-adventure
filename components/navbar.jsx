@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Navbar(){
     return (
 		<>
-	<nav class="relative px-9 flex justify-between items-center bg-custom-yellow border-b-4 border-l-4 border-orange-600">
+	<nav class="relative px-9 flex justify-between items-center bg-custom-yellow border-b-4 border-l-4 border-orange-600" id="123123">
 		<a class="text-3xl font-bold leading-none" href="#">
 			<Image src = "/testimg2.png	" height="70" width="100">
 
