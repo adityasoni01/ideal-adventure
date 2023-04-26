@@ -49,7 +49,7 @@ export default function Footer(){
           {/* :NAVIGATION */}
           <nav className="py-4 px-2 flex flex-wrap justify-center list-none">
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#123123">Home</a></li>
-            <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">Experience</a></li>
+            <li className="p-3 hover:font-semibold text-black font-bold"><a href="#">Experience</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">Planning</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">About Us</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">Contact</a></li>
