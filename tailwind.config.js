@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         'custom-yellow' : '#fefee4',
         'footer-color' : '#f4f4d3',
+        'body-color' : '#ffd987',
       },
     },
   },

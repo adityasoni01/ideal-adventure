@@ -1,7 +1,7 @@
 export default function Paragraph() {
     return (
         <>
-            <div class="bg-[url('/desertimg.jpeg')] border-t-4 border-orange-600 bg-contain w-full py-10 bg-no-repeat">
+            <div class="bg-[url('/desertimg.jpeg')] border-t-4 border-orange-600 bg-cover w-full py-10 bg-no-repeat">
                 <h1 class="text-5xl  font-serif dark:text-white text-center py-10">JAIPUR</h1>
                 <p class="text-2xl  font-serif  dark:text-white text-center ">The Pink City</p>
                 <p class="text-2xl font-serif text-red-500 dark:text-white text-center py-4">Jaipur Sightseeing and other RTDC Tours</p>

@@ -75,9 +75,6 @@ export default function Footer(){
           </div>
         </div>
 
-        {/* :COPYRIGHT */}
-        <p className="pt-10 text-sm text-black text-center">&copy;2021, Fancy Tailwind All Rights Reserved.</p>
-
       </div>
     </footer>
   );
