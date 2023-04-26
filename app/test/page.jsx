@@ -1,18 +1,18 @@
-'use client'
-import React from "react";
+"use client"
+import {useState} from "react";
 
-export default function Modal({modal,setShowModal}) {
+export default function Test() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
-      {/* <button
+      <button
         className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
         Open regular modal
-      </button> */}
-      {modal}
-      {modal ? (
+      </button>
+      {showModal ? (
         <>
           <div
             className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
@@ -27,7 +27,7 @@ export default function Modal({modal,setShowModal}) {
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => modal=false}
+                    onClick={() => setShowModal(false)}
                   >
                     <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×

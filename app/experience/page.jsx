@@ -1,20 +1,27 @@
+'use client'
+import { useState } from 'react'
 import Script from 'next/script'
-
+import Image from 'next/image'
+import Temp from '@/components/temp'
 export default function Festival() {
+  const [showModal, setShowModal] = useState(false);
     return(
-       <>
+       <><Temp modal={showModal} setShowModal={setShowModal}/>
         <h1 class="text-5xl  font-serif dark:text-white text-center pt-10">FAIR AND FESTIVALS</h1>
         <p class="text-2xl  font-serif dark:text-white text-center pt-4">WHAT MAKES RAJASTHAN TICK </p>
        <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
     {/* <!--Card 1--> */}
     <div class="rounded overflow-hidden shadow-lg">
       <img class="w-full" src="/holi.jpg" alt=" " />
+      {/* <Image src ="/holi.jpg"> */}
+
+      {/* </Image> */}
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">BRAJ HOLI</div>
-        <p class="text-gray-700 text-base">
+        <div class="font-bold text-xl mb-2" onClick={() => setShowModal(true)}>BRAJ HOLI</div>
+        {/* <p class="text-gray-700 text-base">
         The Braj festival in Rajasthan is held every year for two days in the Shukla Paksha of the Phalgun month, a few days prior to Holi.  This festival is dedicated to Lord Krishna who is believed to have spent a considerable amount of time in a region called Braj in Rajasthan. 
  This festival not only replicates the spirit of Holi but also impersonates the timeless love of Radha and Krishna. The highlight of this festival is the Raslila dance performed with great zest and unity. The entire town is painted and no one is spared from being splashed with colours. The festival is celebrated with great pomp and ceremony in Deeg, Kaman and Bharatpur in the Bharatpur District.
-   </p>
+   </p> */}
       </div>
       </div>
     {/* <!--Card 2--> */}
@@ -22,20 +29,23 @@ export default function Festival() {
       <img class="w-full" src="/gangaur.jpg" alt="" />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">GANGAUR FESTIVAL</div>
-        <p class="text-gray-700 text-base">
+        {/* <p class="text-gray-700 text-base">
         Gangaur is one of the most important festivals in Rajasthan. In some form or the other, it is celebrated all over Rajasthan. “Gan” is a synonym for Lord Shiva & “Gauri” or “Gaur” stands for Goddess Parvati, the heavenly consort of Lord Shiva. Gangaur celebrates the union of the two and is a symbol of conjugal & marital happiness. Gangaur is celebrated in the month of Chaitra (March-April), the first month of the Hindu calendar. This month marks the end of winter & the onset of spring. This festival is celebrated especially by women, who worship clay idols of “Gan” & “Gauri” in their houses. These idols are worshipped by unmarried girls who seek the blessings of Gan & Gauri for a good husband, while the married women pray for the good health and long life of their husbands. This worship which starts from the first day of the chaitra month culminates on the 18th day into Gangaur festival with a great religious fervor. On the eve of Gangaur festival, women decorate their palms and fingers with henna. The idols of Gan and Gauri are immersed in a pond or in a nearby lake on the last day of the festival. A traditional procession of Gangaur commences form the Zanani-Deodhi of the City Palace, passing through Tripolia Bazaar, Chhoti Chaupar, Gangauri Bazaar, Chaugan stadium and finally converges near the Talkatora. The procession is headed by a colorful pageantry of old palanquins, chariots, bullock carts and performing folk artists.
-        </p>
+        </p> */}
       </div>
     </div>
 
     {/* <!--Card 3--> */}
     <div class="rounded overflow-hidden shadow-lg">
       <img class="w-full" src="/bundi.jpg" alt="" />
+      {/* <Image src ="/bundi.jpg" layout = "fill"> */}
+
+      {/* </Image> */}
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">BUNDI FESTIVAL</div>
-        <p class="text-gray-700 text-base">
+        {/* <p class="text-gray-700 text-base">
         The Bundi Festival is celebrated in the month of Kartik (October-November) and includes several spiritual and traditional activities. It is a remarkable cluster of traditional art, culture and craftsmanship and visitors are left charmed by its magnificence. The program includes a colourful Shobha Yatra, arts & crafts fair, ethnic sports, cultural exhibition, classical music & dance program, turban competitions, bridal clothing, musical band competitions, and a sparkling fireworks display. Early in the morning, after the full moon night of Kartik Purnima, women and men clad in attractive colourful costumes light diyas or lamps on the banks of River Chambal and seek blessings.
-        </p>
+        </p> */}
       </div>
     </div>
         {/* <!--Card 4--> */}

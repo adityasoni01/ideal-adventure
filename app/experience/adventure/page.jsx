@@ -28,9 +28,9 @@ export default  function Adventure(){
         </p>
 
      
-        <button onClick={toggleText} id="button"
+        {/* <button onClick={toggleText} id="button"
             class="mt-3 px-5 py-2 bg-rose-500 text-white duration-300 hover:bg-rose-700">Read
-            more</button>
+            more</button> */}
 </div>
 
     
