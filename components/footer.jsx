@@ -1,3 +1,6 @@
+
+
+
 export default function Footer(){
   return (
 <footer className="w-full py-6 px-4 bg-footer-color"> {/* Container */}
