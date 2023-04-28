@@ -6,8 +6,12 @@ import Temp from '@/components/temp'
 
 export default function Festival() {
   const [showModal, setShowModal] = useState(false);
+  const [message, setMessage] = useState({title:"",des:""});
+  // const [showdescription, setdescription] = useState({ title : "Braj Holi", description : "a"});
     return(
-       <><Temp modal={showModal} setShowModal={setShowModal}/>
+       <>
+       {/* <Temp modal={showModal} setShowModal={setShowModal} showdescription ={showdescription} setdescription = {setdescription}/> */}
+       <Temp modal={showModal} setShowModal={setShowModal} showMessage={message} setDescription={setMessage}/>
        <button class="bg-custom-yellow hover:bg-gray-400 text-black font-serif  py-2 px-4 mt-8 text-3xl rounded w-1/2" type='button'>
       
 <a href='#adv' />
@@ -28,7 +32,9 @@ export default function Festival() {
         {/* <p class="text-gray-700 text-base">
         The Braj festival in Rajasthan is held every year for two days in the Shukla Paksha of the Phalgun month, a few days prior to Holi. This festival is dedicated to Lord Krishna who is believed to have spent a considerable amount of time in a...
         </p> */}
-       <button class="bg- hover:bg-blue-700 text-black font-bold  text-xl mb-2 py-2 px-4 rounded border-solid" onClick={() => setShowModal(true)}>
+       <button class="bg- hover:bg-blue-700 text-black font-bold  text-xl mb-2 py-2 px-4 rounded border-solid" onClick={() => {setShowModal(true); setMessage({...message, title: "Braj Holi",des: "The Braj festival in Rajasthan is held every year for two days in the Shukla Paksha of the Phalgun month, a few days prior to Holi.  This festival is dedicated to Lord Krishna who is believed to have spent a considerable amount of time in a region called Braj in Rajasthan. This festival not only replicates the spirit of Holi but also impersonates the timeless love of Radha and Krishna. The highlight of this festival is the Raslila dance performed with great zest and unity. The entire town is painted and no one is spared from being splashed with colours. The festival is celebrated with great pomp and ceremony in Deeg, Kaman and Bharatpur in the Bharatpur District."})}}>
+       {/* <Temp modal={showModal} setShowModal={setShowModal} showdescription ={showdescription} setdescription = {setdescription}/>
+        setdescription("The Braj festival in Rajasthan is held every year for two days in the Shukla Paksha of the Phalgun month, a few days prior to Holi.  This festival is dedicated to Lord Krishna who is believed to have spent a considerable amount of time in a region called Braj in Rajasthan. This festival not only replicates the spirit of Holi but also impersonates the timeless love of Radha and Krishna. The highlight of this festival is the Raslila dance performed with great zest and unity. The entire town is painted and no one is spared from being splashed with colours. The festival is celebrated with great pomp and ceremony in Deeg, Kaman and Bharatpur in the Bharatpur District." */}
 Explore
 </button> 
       
@@ -42,7 +48,7 @@ Explore
         {/* <p class="text-gray-700 text-base">
         Gangaur is one of the most important festivals in Rajasthan. In some form or the other, it is celebrated all over Rajasthan. “Gan” is a synonym for Lord Shiva & “Gauri” or “Gaur” stands for Goddess Parvati, the heavenly consort of Lord Shiva. Gangaur celebrates the union of the two and is a symbol of conjugal & marital happiness. Gangaur is celebrated in the month of Chaitra (March-April), the first month of the Hindu calendar. This month marks the end of winter & the onset of spring. This festival is celebrated especially by women, who worship clay idols of “Gan” & “Gauri” in their houses. These idols are worshipped by unmarried girls who seek the blessings of Gan & Gauri for a good husband, while the married women pray for the good health and long life of their husbands. This worship which starts from the first day of the chaitra month culminates on the 18th day into Gangaur festival with a great religious fervor. On the eve of Gangaur festival, women decorate their palms and fingers with henna. The idols of Gan and Gauri are immersed in a pond or in a nearby lake on the last day of the festival. A traditional procession of Gangaur commences form the Zanani-Deodhi of the City Palace, passing through Tripolia Bazaar, Chhoti Chaupar, Gangauri Bazaar, Chaugan stadium and finally converges near the Talkatora. The procession is headed by a colorful pageantry of old palanquins, chariots, bullock carts and performing folk artists.
         </p> */}
-        <button class="bg- hover:bg-blue-700 text-black font-bold  text-xl mb-2 py-2 px-4 rounded border-solid" onClick={() => setShowModal2(true)}>
+        <button class="bg- hover:bg-blue-700 text-black font-bold  text-xl mb-2 py-2 px-4 rounded border-solid" onClick={() => {setShowModal(true); setMessage({...message, title: "GANGAUR FESTIVAL",des: " Gangaur is one of the most important festivals in Rajasthan. In some form or the other, it is celebrated all over Rajasthan. “Gan” is a synonym for Lord Shiva & “Gauri” or “Gaur” stands for Goddess Parvati, the heavenly consort of Lord Shiva. Gangaur celebrates the union of the two and is a symbol of conjugal & marital happiness. Gangaur is celebrated in the month of Chaitra (March-April), the first month of the Hindu calendar. This month marks the end of winter & the onset of spring. This festival is celebrated especially by women, who worship clay idols of “Gan” & “Gauri” in their houses. These idols are worshipped by unmarried girls who seek the blessings of Gan & Gauri for a good husband, while the married women pray for the good health and long life of their husbands. This worship which starts from the first day of the chaitra month culminates on the 18th day into Gangaur festival with a great religious fervor. On the eve of Gangaur festival, women decorate their palms and fingers with henna. The idols of Gan and Gauri are immersed in a pond or in a nearby lake on the last day of the festival. A traditional procession of Gangaur commences form the Zanani-Deodhi of the City Palace, passing through Tripolia Bazaar, Chhoti Chaupar, Gangauri Bazaar, Chaugan stadium and finally converges near the Talkatora. The procession is headed by a colorful pageantry of old palanquins, chariots, bullock carts and performing folk artists."})}}>
 Explore
 </button> 
       </div>
@@ -56,7 +62,7 @@ Explore
         {/* <p class="text-gray-700 text-base">
         The Bundi Festival is celebrated in the month of Kartik (October-November) and includes several spiritual and traditional activities. It is a remarkable cluster of traditional art, culture and craftsmanship and visitors are left charmed by its magnificence. The program includes a colourful Shobha Yatra, arts & crafts fair, ethnic sports, cultural exhibition, classical music & dance program, turban competitions, bridal clothing, musical band competitions, and a sparkling fireworks display. Early in the morning, after the full moon night of Kartik Purnima, women and men clad in attractive colourful costumes light diyas or lamps on the banks of River Chambal and seek blessings.
         </p> */}
-        <button class="bg- hover:bg-blue-700 text-black font-bold  text-xl mb-2 py-2 px-4 rounded border-solid" onClick={() => setShowModal(true)}>
+        <button class="bg- hover:bg-blue-700 text-black font-bold  text-xl mb-2 py-2 px-4 rounded border-solid" onClick={() => {setShowModal(true); setMessage({...message, title: "BUNDI FESTIVAL",des: "The Bundi Festival is celebrated in the month of Kartik (October-November) and includes several spiritual and traditional activities. It is a remarkable cluster of traditional art, culture and craftsmanship and visitors are left charmed by its magnificence. The program includes a colourful Shobha Yatra, arts & crafts fair, ethnic sports, cultural exhibition, classical music & dance program, turban competitions, bridal clothing, musical band competitions, and a sparkling fireworks display. Early in the morning, after the full moon night of Kartik Purnima, women and men clad in attractive colourful costumes light diyas or lamps on the banks of River Chambal and seek blessings."})}}>
 Explore
 </button> 
       </div>

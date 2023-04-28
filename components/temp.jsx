@@ -1,7 +1,8 @@
 'use client'
 import React from "react";
+import Festival from "@/app/experience/page";
 
-export default function Modal({modal,setShowModal}) {
+export default function Modal({modal,setShowModal,showMessage,setDescription}) {
   return (
     <>
 
@@ -17,7 +18,8 @@ export default function Modal({modal,setShowModal}) {
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <h3 className="text-3xl font-semibold">
-                  BRAJ HOLI
+                  {/* {showdescription.title} */}
+                  <h5>{showMessage.title}</h5>
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -31,8 +33,8 @@ export default function Modal({modal,setShowModal}) {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                  The Braj festival in Rajasthan is held every year for two days in the Shukla Paksha of the Phalgun month, a few days prior to Holi.  This festival is dedicated to Lord Krishna who is believed to have spent a considerable amount of time in a region called Braj in Rajasthan. 
- This festival not only replicates the spirit of Holi but also impersonates the timeless love of Radha and Krishna. The highlight of this festival is the Raslila dance performed with great zest and unity. The entire town is painted and no one is spared from being splashed with colours. The festival is celebrated with great pomp and ceremony in Deeg, Kaman and Bharatpur in the Bharatpur District.
+                    {/* {showdescription.description} */}
+                  {showMessage.des}
                   </p>
                 </div>
                 {/*footer*/}
