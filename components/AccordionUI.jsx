@@ -17,7 +17,7 @@ const AccordionUI = ({ title, children, Id, Index, setIndex }) => {
         </div>
         <div className="flex items-center justify-center mb-10">
           {Index !== Id ? (
-            <HiArrowCircleDown className="w-6 h-6 group-hover:text-white text-black" />
+            <HiArrowCircleDown className="w-6 h-6 group-hover:text-orange-500 text-black" />
           ) : (
             <HiX className="w-6 h-6 group-hover:text-white text-black" />
           )}

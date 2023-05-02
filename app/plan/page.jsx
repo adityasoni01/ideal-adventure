@@ -23,7 +23,7 @@ export default function Plan() {
                         This diversity and variability percolates into its seasons too. So, when the question of ‘what is the best time to visit Jaipur’ arises, one must consider every detail. </p>
                     <br />
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="#">Click Here</Link> to Know more about the weather of jaipur.</p>
+                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/plan/weather">Click Here</Link> to Know more about the weather of jaipur.</p>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ export default function Plan() {
                     The city has its own airport and railway station and bus transportation. </p>
                     <br/>
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="#">Click Here</Link> to Know more about  different ways to reach Jaipur.</p>
+                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/plan/transport">Click Here</Link> to Know more about  different ways to reach Jaipur.</p>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ export default function Plan() {
                      If you are from outside India, Rajasthan is the best place to explore India’s rich history and ancient culture.  </p>
                     <br />
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="#">Click Here</Link> to Know more about the foreign tourist .</p>
+                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/plan/tourist">Click Here</Link> to Know more about the foreign tourist .</p>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function Plan() {
                      We have created a list of the best heritage hotels in Jaipur to assist you with your booking journey. </p>
                     <br />
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="#">Click Here</Link> to Know more about the heritage properties in Jaipur.</p>
+                        <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/plan/heritage">Click Here</Link> to Know more about the heritage properties in Jaipur.</p>
                 </div>
             </div>
         </>

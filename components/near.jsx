@@ -33,7 +33,7 @@ export default function Near(){
           <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
           <div class="absolute inset-0 flex translate-y-[70%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 class=" text-3xl font-bold text-white">
-              Suicide Point
+              Kota
             </h1>
             <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             Kota, a city in Rajasthan, 200 km from Jaipur, is known for its beautiful and intricate stone carvings on its historic buildings, such as palaces and temples, showcasing the region's rich cultural heritage.

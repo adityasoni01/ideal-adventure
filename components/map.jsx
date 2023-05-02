@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Jaipurmap(){
     return(
-            <section class="bg-body-color dark:bg-gray-900 border-t-8 border-orange-600 border-double">
+            <section class="bg-body-color dark:bg-gray-900 border-t-4 border-b-4 border-orange-600 border-solid">
         <div class="container px-8 py-8 mx-auto">
             <div>
 
