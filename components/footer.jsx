@@ -1,9 +1,8 @@
-
-
+import Link from "next/link";
 
 export default function Footer(){
   return (
-<footer className="w-full py-6 px-4 bg-footer-color"> {/* Container */}
+<footer className="w-full py-6 px-4 bg-footer-color  "> {/* Container */}
       <h2 className="sr-only">Footer</h2>
       <div className="mx-auto max-w-7xl flex flex-col items-center text-gray-200">
         <div className="w-full flex flex-col md:flex-row flex-wrap justify-between items-center">
@@ -56,6 +55,8 @@ export default function Footer(){
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">Planning</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">About Us</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="#link">Contact</a></li>
+            
+            
           </nav>
 
           {/* :CONTACT */}
