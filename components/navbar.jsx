@@ -1,4 +1,6 @@
 import Image from "next/image"
+
+import Link from "next/link"
 export default function Navbar(){
     return (
 		<>
@@ -42,6 +44,8 @@ export default function Navbar(){
 				</svg>
 			</li>
 			<li><a class="text-lg text-gray-700 hover:text-orange-500 text font-bold font-serif" href="#">About Us</a></li>
+		
+		
 		</ul>
 		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="#">Sign In</a>
 		<a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200" href="#">Sign up</a>
