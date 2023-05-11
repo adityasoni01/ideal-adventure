@@ -1,7 +1,7 @@
 export default function About() {
     return(
        <>
-       <p>kya hi bataye!!!!</p>
+       <p>ydd rkha kro</p>
        
        </>
     )

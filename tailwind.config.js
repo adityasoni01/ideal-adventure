@@ -15,6 +15,9 @@ module.exports = {
         'footer-color' : '#f4f4d3',
         'body-color' : '#ffd987',
       },
+      height: {
+        "125v": "125vh",
+      },
     },
   },
   plugins: [],
