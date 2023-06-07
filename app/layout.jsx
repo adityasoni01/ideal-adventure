@@ -1,7 +1,10 @@
+'use client';
+import { SessionProvider } from 'next-auth/react';
 import Navbar from '@/components/navbar'
 import './globals.css'
 import Temp from '@/components/temp'
 import Footer from '@/components/footer'
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,9 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <SessionProvider>
         <Navbar />
         {children}
-        <Footer /></body>
+        <Footer />
+        </SessionProvider></body>
     </html>
   )
 }
