@@ -9,11 +9,12 @@ export default function Home() {
   
   // const { data: session } = useSession();
   return (
-  <>
-  <Slider />
+    <><section>
+    <Slider />
   <Paragraph/>
   <Jaipurmap />
   <Near />
+  </section>
   </>
   )
 }

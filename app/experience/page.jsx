@@ -10,10 +10,10 @@ export default function Festival() {
     return(
        <>
        {/* passing Props */}
-       <div className=''>
+       <section className=''>
        <Temp modal={showModal} setShowModal={setShowModal} showMessage={message} setDescription={setMessage}/>
        <a href='#adv'>
-       <button class="bg-custom-yellow rounded-full hover:bg-body-color shadow-lg text-black font-serif py-2 px-4 mt-8 text-3xl rounded w-1/4 " type='button'>
+       <button class="bg-custom-yellow rounded-full hover:bg-body-color shadow-lg text-black font-serif py-2 px-4 mt-8 text-3xl  w-1/2 " type='button'>
       
 
   ADVENTURE
@@ -21,7 +21,7 @@ export default function Festival() {
 </button>
 </a>
 <a href='#food'>
-       <button class="bg-custom-yellow hover:bg-body-color shadow-xl hover:bg-gray-400 text-black font-serif py-2 px-4 mt-8 text-3xl rounded w-1/4 rounded-full">
+       <button class="bg-custom-yellow hover:bg-body-color shadow-xl text-black font-serif py-2 px-4 mt-8 text-3xl w-1/2 rounded-full">
  FOOD AND CUISINE
  
 </button>
@@ -341,7 +341,7 @@ Explore
   
    
       </div>
-      </div>  
+      </section>  
        </>
      
         

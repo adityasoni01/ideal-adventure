@@ -5,6 +5,7 @@ export default function Food(){
     const [showLocation, setLocation] = useState("https://maps.google.com/maps?q=Alsisar Haveli&t=k&z=15&ie=UTF8&iwloc=&output=embed");
     return(
         <>
+        <section>
         <div class=" border-t-4 border-orange-600 bg-cover w-50 py-6 bg-body-color">
             <h1 class="text-5xl  font-serif dark:text-white text-center pt-10">HERITAGE PROPERTIES</h1>
         <p class="text-xl  font-serif dark:text-white text-center pt-4">LIVE LIKE A ROYAL IN THE VERY STRUCTURES THAT WERE MADE FOR THE ROYALS THEMSELVES </p>
@@ -110,6 +111,7 @@ export default function Food(){
             
 
     </div>
+</section>
 </section>
 
         </>

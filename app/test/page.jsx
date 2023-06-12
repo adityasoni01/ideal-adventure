@@ -1,4 +1,5 @@
 "use client"
+import Product from "@/components/product";
 import {useState} from "react";
 
 export default function Test() {
@@ -67,6 +68,17 @@ export default function Test() {
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
         </>
       ) : null}
+      <div class="mx-auto grid max-w-screen-xl grid-cols-1 gap-y-0 gap-x-6 p-6 md:grid-cols-2 lg:grid-cols-3">
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      </div>
     </>
   );
 }

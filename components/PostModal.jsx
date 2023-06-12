@@ -7,37 +7,17 @@ import { useRouter } from 'next/navigation';
 
 export default function PostModal({ loadData }) {
   const router = useRouter();
-  // const { data: session } = useSession();
   const [showModal, setShowModal] = useState(false);
   const [selectedFile, setSelectedFile] = useState();
   const [checkFile, setCheckFile] = useState(false);
   const [caption, setCaption] = useState('');
+  const { data: session } = useSession();
   const [avatar, setAvatar] = useState('default.png');
-
+  console.log(session?.user._id)
   const imageHandler = (e) => {
     setSelectedFile(e.target.files[0]);
     setCheckFile(true);
   };
-  useEffect(
-    () => async () => {
-      try {
-        if (session) {
-          const res = await fetch('/api/users/get-user', {
-            method: 'POST',
-            headers: {
-              'content-type': 'application/json',
-            },
-            body: JSON.stringify({ uid: session.user.id }),
-          });
-          const data = await res.json();
-          setAvatar(data.data.avatar);
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    },
-    // [session]
-  );
 
   const uploadPost = async (e) => {
     try {
@@ -45,12 +25,13 @@ export default function PostModal({ loadData }) {
       const formData = new FormData();
       formData.append('image', selectedFile);
       formData.append('caption', caption);
-      formData.append('Uid', session.user.id);
+      formData.append('Uid', session.user._id);
       const res = await fetch('/api/posts/new-post', {
         method: 'POST',
         body: formData,
       });
       const data = await res.json();
+      console.log(data)
       if (res.ok) {
         alert('New post added successfully');
         setShowModal(false);
@@ -80,7 +61,7 @@ export default function PostModal({ loadData }) {
           type='text'
           id='first_name'
           className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 cursor-pointer'
-          placeholder='What do you want to share?'
+          placeholder='Click to Share Your Memories with the World'
           disabled
         />
       </div>

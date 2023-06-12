@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Plan() {
     return (
-        <>
+        <><section>
             <div className="bg-custom-yellow pb-8">
                 <h1 class="text-5xl  font-serif dark:text-white text-center pt-10">RAJASTHAN TRAVEL GUIDE</h1>
                 <p class="text-1xl font-serif dark:text-white text-center pt-2">Get know about your journey plan</p>
@@ -80,6 +80,7 @@ export default function Plan() {
                         <Link class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="/plan/heritage">Click Here</Link> to Know more about the heritage properties in Jaipur.</p>
                 </div>
             </div>
+            </section>
         </>
     )
 }

@@ -23,7 +23,7 @@ export default function Posts() {
   }
   return (
     <section
-      className=' bg-center bg-fixed bg-contain  h-screen w-screen overflow-hidden'
+      className=' bg-center bg-fixed bg-contain border-b-8 border-orange-500 h-screen w-screen'
       style={{
         backgroundImage: `url(${PostBg.src})`,
       }}
@@ -33,15 +33,15 @@ export default function Posts() {
         <div id='main' className='flex flex-col'>
           {posts === null ? (
             <ErrorCard message='Unable to load data. try again...' />
-          ) : (
-            posts.map((post) => (
+          ) : ( 
+            posts.map((post) => ( 
               <Post
-                key={post.id}
-                user={post.username}
+                key={post._id}
+                user={post.Uid.name}
                 caption={post.caption}
                 image={post.image}
-                time={post.createdAt}
-                avatar={post.avatar}
+                time={post.time}
+                avatar={'default.png'}
               />
             ))
           )}

@@ -13,7 +13,7 @@ export default function Navbar() {
         class="relative px-9 flex justify-between items-center bg-custom-yellow border-b-4 border-l-4 border-orange-600"
         id=""
       >
-        <a class="text-3xl font-bold leading-none" href="#">
+        <a class="text-3xl font-bold leading-none" href="/">
           <Image src="/testimg2.png	" height="70" width="100"></Image>
         </a>
         <div class="lg:hidden">
@@ -128,9 +128,9 @@ export default function Navbar() {
           <li>
             <a
               class="text-lg text-gray-700 hover:text-orange-500 text font-bold font-serif"
-              href="#"
+              href="/explore"
             >
-              About Us
+              Explore
             </a>
           </li>
         </ul>
