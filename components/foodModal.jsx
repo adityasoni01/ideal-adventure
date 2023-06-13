@@ -80,11 +80,11 @@ export default function FoodModal({ loadData }) {
                   }}
                 >
                     <label for="cafename" class="font-semibold">Cafe Name:</label>
-  <input type="text" id="cafename" name="cafename" placeholder='Name of the Cafe' class="ml-10 border border-gray-300 " onChange={(e) => setName(e.target.value)}/><br/><br/>
+  <input type="text" id="cafename" name="cafename" placeholder='Name of the Cafe' class="ml-10 border border-gray-300 px-1" onChange={(e) => setName(e.target.value)}/><br/><br/>
   <label for="cafetiming" class="font-semibold">Cafe Timings:       </label>
-  <input type="text" id="cafetiming" name="cafetiming" placeholder='09:00 - 17:00' class="ml-5 border border-gray-300 " onChange={(e) => setTiming(e.target.value)}/><br/><br/>
+  <input type="text" id="cafetiming" name="cafetiming" placeholder='09:00 - 17:00' class="ml-5 border border-gray-300 px-1" onChange={(e) => setTiming(e.target.value)}/><br/><br/>
   <label for="cafetiming" class="font-semibold">Cafe Location:       </label>
-  <input type="text" id="cafelocation" name="cafeloaction" placeholder='Address' class="ml-4 border border-gray-300 " onChange={(e) => setLocation(e.target.value)}/>
+  <input type="text" id="cafelocation" name="cafeloaction" placeholder='Address' class="ml-4 border border-gray-300 px-1" onChange={(e) => setLocation(e.target.value)}/>
                   <div id='image-upload'>
                     <div className='flex justify-center items-center m-4'>
                       {selectedFile && (

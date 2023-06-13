@@ -35,7 +35,7 @@ export default function Footer(){
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="/plan">Plan</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="/posts">Posts</a></li>
             <li className="p-3 hover:font-semibold text-black font-bold"><a href="/explore">Explore</a></li>
-            <li className="p-3 hover:font-semibold text-black font-bold"><a href="/contact">Contact Us</a></li>
+            <li className="p-3 hover:font-semibold text-black font-bold"><a href="/about">About Us</a></li>
             
             
           </nav>

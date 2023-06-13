@@ -78,9 +78,9 @@ export default function ProductModal({ loadData }) {
                   }}
                 >
                     <label for="productname" class="font-semibold">Product Name:</label>
-  <input type="text" id="productname" name="productname" placeholder='Name of the Product' class="ml-4 border border-gray-300 " onChange={(e) => setName(e.target.value)}/><br/><br/>
+  <input type="text" id="productname" name="productname" placeholder='Name of the Product' class="ml-4 border border-gray-300 px-1" onChange={(e) => setName(e.target.value)}/><br/><br/>
   <label for="productprice" class="font-semibold">Product Price:       </label>
-  <input type="text" id="productprice" name="productprice" placeholder='Price in Rs.' class="ml-5 border border-gray-300 " onChange={(e) => setPrice(e.target.value)}/>
+  <input type="text" id="productprice" name="productprice" placeholder='Price in Rs.' class="ml-5 border border-gray-300 px-1" onChange={(e) => setPrice(e.target.value)}/>
                   <div id='image-upload'>
                     <div className='flex justify-center items-center m-4'>
                       {selectedFile && (

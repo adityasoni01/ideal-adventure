@@ -12,7 +12,7 @@ export default function Food(){
         <p class="text-lg  font-serif dark:text-white text-center pt-4 pb-10 border-b-8 border-orange-600 border-double">These Heritage hotels will take you back in time to the Golden Era of Rajasthan’s History </p>
         </div>
         <section class="bg-body-color border-b-8 dark:bg-gray-900 border-orange-600 border-solid">
-        <div class="mapouter absolute text-right h-5/6 w-11/12 py-16"><div class="gmap_canvas rounded-2xl absolute overflow-hidden bg-none ml-96 h-full w-full"><iframe width="80%" height="85%" id="gmap_canvas" src={showLocation} frameborder="0" scrolling="no" className=" rounded-2xl"></iframe></div></div>
+        <div class="mapouter absolute text-right h-1/2 w-11/12 py-16"><div class="gmap_canvas rounded-2xl absolute overflow-hidden bg-none ml-96 h-full w-full"><iframe width="80%" height="90%" id="gmap_canvas" src={showLocation} frameborder="0" scrolling="no" className=" rounded-2xl"></iframe></div></div>
     <div class="container px-8 py-8 mx-auto">
         <div>
 

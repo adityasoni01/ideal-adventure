@@ -1,9 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import ErrorCard from '@/components/errorCard';
-import Product from '@/components/product';
 import PostBg from '@/public/post-bg.jpg';
-import ProductModal from '@/components/ProductModal';
 import HotelModal from '@/components/hotelModal';
 import Hotel from '@/components/hotel';
 

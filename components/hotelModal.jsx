@@ -12,8 +12,9 @@ export default function HotelModal({ loadData }) {
   const [checkFile, setCheckFile] = useState(false);
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
+  const [location, setLocation] = useState('');
+  const [capacity, setCapacity] = useState('');
   const { data: session } = useSession();
-//   console.log(session?.user._id)
   const imageHandler = (e) => {
     setSelectedFile(e.target.files[0]);
     setCheckFile(true);
@@ -21,21 +22,22 @@ export default function HotelModal({ loadData }) {
 
   const uploadPost = async (e) => {
     try {
-        console.log("hii")
       if (!checkFile) return alert('Please select a file ');
       const formData = new FormData();
       formData.append('image', selectedFile);
       formData.append('name', name);
       formData.append('price', price);
+      formData.append('location', location);
+      formData.append('capacity', capacity);
       formData.append('Uid', session.user._id);
-      const res = await fetch('/api/product/new-product', {
+      const res = await fetch('/api/hotel/new-hotel', {
         method: 'POST',
         body: formData,
       });
       const data = await res.json();
       console.log(data)
       if (res.ok) {
-        alert('Your Product is Added Successfully');
+        alert('Your Hotel is Added Successfully');
         setShowModal(false);
         loadData();
         setSelectedFile(null);
@@ -49,9 +51,8 @@ export default function HotelModal({ loadData }) {
     <>
        <div className="flex bg-custom-yellow pb-4 rounded-xl  shadow-xl">
           <h1 class="text-5xl font-serif dark:text-white text-center mx-auto pt-6">
-            Arts and Crafts
-        {/* <ProductModal loadData={loadData} /> */}
-          </h1><button class="bg-orange-300 hover:scale-105 transition duration-200 mr-10 text-black mt-6 px-4  rounded" onClick={()=>setShowModal(true)}>Click to Add Your Own Product</button>
+            Hostels and Inn
+          </h1><button class="bg-orange-300 hover:scale-105 transition duration-200 mr-10 text-black mt-6 px-4  rounded" onClick={()=>setShowModal(true)}>Click to Add Your Own Hostel</button>
         </div>
       {showModal ? (
         <>
@@ -59,7 +60,7 @@ export default function HotelModal({ loadData }) {
             <div className='relative w-auto my-6 mx-auto max-w-3xl'>
               <div className=' rounded-lg shadow-lg relative w-full bg-white'>
                 <div className='flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t'>
-                  <h3 className='text-3xl font-semibold'>Add Product</h3>
+                  <h3 className='text-3xl font-semibold'>Add Hostel</h3>
                   <button
                     className='p-1 ml-auto bg-transparent border-0 text-black opacity-60 float-right text-3xl leading-none font-semibold outline-none focus:outline-none'
                     onClick={() => setShowModal(false)}
@@ -77,10 +78,14 @@ export default function HotelModal({ loadData }) {
                     uploadPost(e);
                   }}
                 >
-                    <label for="productname" class="font-semibold">Product Name:</label>
-  <input type="text" id="productname" name="productname" placeholder='Name of the Product' class="ml-4 border border-gray-300 " onChange={(e) => setName(e.target.value)}/><br/><br/>
-  <label for="productprice" class="font-semibold">Product Price:       </label>
-  <input type="text" id="productprice" name="productprice" placeholder='Price in Rs.' class="ml-5 border border-gray-300 " onChange={(e) => setPrice(e.target.value)}/>
+                    <label for="hotelname" class="font-semibold">Hostel Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="hotelname" name="hotelname" placeholder='Name of the hostel' class="border border-gray-300 px-1" onChange={(e) => setName(e.target.value)}/><br/><br/>
+  <label for="hotellocation" class="font-semibold">Hostel Location:&nbsp;&nbsp;</label>
+  <input type="text" id="hotellocation" name="hotellocation" placeholder='Address' class="border border-gray-300 px-1" onChange={(e) => setLocation(e.target.value)}/><br/><br/>
+  <label for="hotelprice" class="font-semibold">Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </label>
+  <input type="text" id="hotelprice" name="hotelprice" placeholder='Price in Rs.' class="border border-gray-300 px-1" onChange={(e) => setPrice(e.target.value)}/><br/><br/>
+  <label for="hotelcapacity" class="font-semibold">Max person:       </label>
+  <input type="text" id="hotelcapacity" name="hotelcapacity" placeholder='Max Person in a room' class="px-1 border border-gray-300 " onChange={(e) => setCapacity(e.target.value)}/>
                   <div id='image-upload'>
                     <div className='flex justify-center items-center m-4'>
                       {selectedFile && (

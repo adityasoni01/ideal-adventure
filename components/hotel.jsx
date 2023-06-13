@@ -9,7 +9,7 @@ export default function Hotel({ usercontact, name, image, price, location, capac
           <Image
           width={500}
           height={400}
-          src={`/product/${image}`}
+          src={`/hotels/${image}`}
           alt=''
           className='object-cover w-96 mb-4 h-60 sm:h-96 bg-white overflow-hidden inline-block'
         />
@@ -23,12 +23,14 @@ export default function Hotel({ usercontact, name, image, price, location, capac
         </div>
 
         <div class="mt-1 p-2">
-          <h2 class="text-slate-700">{name}</h2>
+          <h2 class="text-slate-700 font-bold text-xl">{name}</h2>
 
           <div class="mt-3 flex items-end justify-between">
             <p>
-              <span class="text-lg font-bold text-orange-400">₹{price}</span>
-               <p class="text-slate-400 mt-1 text-sm">Contact Number to Buy : {usercontact}</p>
+              <span class="text-lg font-bold text-orange-400">₹{price}/Night</span>
+              <span class="text-lg font-bold text-orange-400 float-right">{capacity} Person/Room</span><br/>
+              <span class="text-base font-bold text-gray-700">Address : {location}</span><br/>
+              <span class="text-base font-bold text-gray-600">Contact For More Info: {usercontact}</span>
             </p>
           </div>
         </div>

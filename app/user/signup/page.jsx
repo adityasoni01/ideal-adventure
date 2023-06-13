@@ -31,11 +31,10 @@ export default function Signup(){
     }
   };
     
-    return (
-      <>
+    return (<>
       <div class="bg-yellow-100 dark:bg-gray-900 h-125v">
-  <div class="flex flex-col items-center justify-center relative px-6 py-8 mx-auto md:h-screen lg:py-0">
-      <a href="/" class="flex items-center mb-2 text-2xl font-semibold text-gray-900 dark:text-white">
+  <div class="flex flex-col items-center justify-center relative px-6 py-4 mx-auto md:h-screen lg:py-0">
+      <a href="/" class="flex items-center mb-1 text-2xl font-semibold text-gray-900 dark:text-white">
       <Image src = "/testimg2.png	" height="150" width="130" className="mt-96">
 
 </Image>
@@ -93,6 +92,7 @@ export default function Signup(){
       </div>
   </div>
 </div>
+
 
       </>
     )

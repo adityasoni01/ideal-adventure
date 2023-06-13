@@ -24,13 +24,13 @@ const hotelSchema = new Schema({
 
       
 })
-hotelSchema.pre(/^find/, function(next) {
-    this.populate({
-      path: 'Uid',
-      select: 'name phone address'
-    });
-    next();
-  });
+// hotelSchema.pre(/^find/, function(next) {
+//     this.populate({
+//       path: 'Uid',
+//       select: 'name phone address'
+//     });
+//     next();
+//   });
 const Hotel = models.Hotel || model('Hotel', hotelSchema);
 
 export default Hotel;
